@@ -1,1 +1,1 @@
-# CryptoDyari
+# CryptoDiary
