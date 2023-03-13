@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href:..\Diary\CSS\cascade.css>
+	<script src="..\Diary\JS\script.js"></script>
+	<title>Crypto Diary</title>
+</head>
+
+<body>
+	<header>
+		<div class='title'>
+			<H1> Crypto Diary </H1>
+		</div>
+	</header>
+	
+
+	
+</div>
+
+<div class="incredibox">
+<form>
+<label for="message">Сообщение:</label>
+<textarea id="message" name="message"></textarea>
+<label for="key">Ключ:</label>
+<input type="text" id="key" name="key">
+<button type="submit">Зашифровать</button>
+</form>
+
+	
+  <button class="tablinks" onclick="noteName(event, 'note1')">Лондон</button>
+  <button class="tablinks" onclick="noteName(event, 'note2')">Париж</button>
+  <button class="tablinks" onclick="noteName(event, 'note3')">Токио</button>
+</div>
+</div>
+
+<div id="note1" class="tabcontent">
+  <h3>Лондон</h3>
+  <p>Лондон является столицей Англии.</p>
+</div>
+
+<div id="note2" class="tabcontent">
+  <h3>Париж</h3>
+  <p>Париж является столицей Франции.</p>
+</div>
+
+<div id="note3" class="tabcontent">
+  <h3>Токио</h3>
+  <p>Токио является столицей Японии.</p>
+</div>
+
+
+
+<div>
+<!-- Изображения, используемые для открытия лайтбокса -->
+<div class="row">
+	<div class="column">
+	  <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- Модальный / Лайтбокс -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="img1_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="img2_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="img3_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="img4_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Вперед/назад элементы управления -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Текст подписи -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Элементы управления миниатюрами изображений -->
+	  <div class="column">
+		<img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Природа">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Снег">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Горы">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Северное сияние">
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
